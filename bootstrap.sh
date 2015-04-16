@@ -20,7 +20,7 @@ rm -Rf /var/www/htmlvag
 echo "Pull acquia repo"
 if [ ! -d /vagrant/gsbpublic ];
 then
-  su - vagrant -c 'cd /vagrant && git clone gsbpublic@svn-3224.prod.hosting.acquia.com:gsbpublic.git'
+  su - vagrant -c 'cd /vagrant && git clone --branch stage gsbpublic@svn-3224.prod.hosting.acquia.com:gsbpublic.git'
 else
   su - vagrant -c 'cd /vagrant/gsbpublic && git pull'
 fi
