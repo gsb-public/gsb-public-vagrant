@@ -68,7 +68,7 @@ echo '
 ==================================
 Enable dblog, Stage File Proxy, and Devel
 ==================================';
-drush en -y dblog stage_file_proxy devel
+drush en -y dblog stage_file_proxy
 
 echo '
 ==================================

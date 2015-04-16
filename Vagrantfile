@@ -12,13 +12,11 @@ Vagrant.configure(2) do |config|
 
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://atlas.hashicorp.com/search.
-  config.vm.box = "gsb"
-  #config.vm.box_url = "http://files.vagrantup.com/trusty32.box"
-  #config.vm.provision :shell, path: "bootstrap.sh"
+  config.vm.box = "GSB/gsb-public-test"
+  config.vm.provision :shell, path: "bootstrap.sh"
   config.vm.network "private_network", ip: "10.100.101.102"
 
   config.vm.provider "virtualbox" do |v|
-    #v.gui = true
     v.memory = 1024
   end
 end
