@@ -15,7 +15,7 @@ echo '
 Prepare html directory
 ==================================';
 echo "Remove Files"
-rm -Rf /var/www/htmlvag
+rm -Rf /var/www/html
 
 echo "Pull acquia repo"
 if [ ! -d /vagrant/gsbpublic ];
